@@ -234,7 +234,7 @@ body {
     }
 }
 
-.slide-content h1 {
+.slide-content h2 {
     font-size: 56px;
     margin-bottom: 20px;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
@@ -489,8 +489,8 @@ section::after {
     z-index: 1;
 }
 
-.section-header h2 {
-    font-size: 42px;
+.section-header h1 {
+    font-size: 45px;
     color: var(--text-dark);
     margin-bottom: 15px;
     position: relative;
@@ -1525,7 +1525,7 @@ color: #ffffff;
         left: 0;
     }
 
-    .slide-content h1 {
+    .slide-content h2 {
         font-size: 36px;
     }
 
@@ -1559,7 +1559,7 @@ color: #ffffff;
 }
 
 @media (max-width: 480px) {
-    .slide-content h1 {
+    .slide-content h2 {
         font-size: 28px;
     }
 
