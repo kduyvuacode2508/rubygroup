@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ruby Group - Cung cấp sơn chất lượng cao từ các thương hiệu uy tín. Sơn nội thất, ngoại thất, công nghiệp, giá cạnh tranh, giao hàng toàn quốc.">
+    <meta name="keywords" content="bán sơn, sơn nội thất, sơn ngoại thất, sơn chống thấm, sơn công nghiệp, Ruby Group">
+    <title>Bán Sơn Chuyên Nghiệp | Ruby Group</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-gem"></i>
+                            <span>RUBY GROUP</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="son.html" class="active">Bán Sơn</a></li>
+                        <li><a href="tham-my.html">Thẩm Mỹ Viện</a></li>
+                        <li><a href="thiet-ke.html">Tư Vấn Thiết Kế</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;">
+                <div class="slide-content">
+                    <h1>Chào Mừng Đến Với Ruby Group</h1>
+                    <p>Đối Tác Tin Cậy Cho Mọi Nhu Cầu Của Bạn</p>
+                    <a href="#services" class="btn-primary">Khám Phá Ngay</a>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;">
+                <div class="slide-content">
+                    <h1>Chất Lượng Là Ưu Tiên Hàng Đầu</h1>
+                    <p>20+ Năm Kinh Nghiệm Trong Ngành</p>
+                    <a href="#about" class="btn-primary">Tìm Hiểu Thêm</a>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;">
+                <div class="slide-content">
+                    <h1>Dịch Vụ Đa Dạng Chuyên Nghiệp</h1>
+                    <p>Giải Pháp Toàn Diện Cho Mọi Khách Hàng</p>
+                    <a href="#services" class="btn-primary">Xem Dịch Vụ</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Về Ruby Group</h2>
+                <div class="divider"></div>
+                <p>Chuyên Cung Cấp Và Phân Phối Sơn Cao Cấp Toàn Quốc</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ruby Group Paint Factory">
+                </div>
+                <div class="about-text">
+                    <h3>Tập Đoàn Phân Phối Sơn Uy Tín Hàng Đầu Việt Nam</h3>
+                    <p>Ruby Group là đơn vị tiên phong trong lĩnh vực <strong>sản xuất và phân phối sơn cao cấp</strong> tại Việt Nam. Với hơn 20 năm kinh nghiệm, chúng tôi đã khẳng định vị thế của mình thông qua những dòng sơn chất lượng, bền màu, an toàn với môi trường và phù hợp với khí hậu Việt Nam.</p>
+                    <p>Chúng tôi cung cấp đa dạng các loại sơn: <strong>sơn nội thất, sơn ngoại thất, sơn chống thấm, sơn epoxy công nghiệp</strong>… phục vụ cho hộ gia đình, công trình, nhà xưởng và các dự án lớn trên toàn quốc.</p>
+                    <p>Ruby Group luôn đặt <strong>uy tín – chất lượng – bền vững</strong> làm kim chỉ nam, cam kết mang đến cho khách hàng những sản phẩm sơn đẹp, bền màu và tiết kiệm chi phí nhất.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-paint-roller"></i>
+                            <h4>100+</h4>
+                            <p>Dòng Sơn Cao Cấp</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h4>50,000+</h4>
+                            <p>Khách Hàng Tin Dùng</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-store"></i>
+                            <h4>80+</h4>
+                            <p>Đại Lý Trên Toàn Quốc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- About Paint Service -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Về Dịch Vụ Bán Sơn Của Ruby Group</h2>
+                <div class="divider"></div>
+                <p>Đối Tác Tin Cậy Trong Lĩnh Vực Cung Cấp Sơn</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-paint-roller"></i> Đa Dạng Sản Phẩm</h3>
+                    <p>Ruby Group tự hào là đại lý phân phối chính thức của các thương hiệu sơn hàng đầu thế giới và trong nước. Chúng tôi cung cấp đầy đủ các loại sơn phục vụ cho mọi mục đích sử dụng từ dân dụng đến công nghiệp.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Sơn nội thất cao cấp thân thiện môi trường</li>
+                        <li><i class="fas fa-check"></i> Sơn ngoại thất chống thấm bền màu</li>
+                        <li><i class="fas fa-check"></i> Sơn công nghiệp chịu nhiệt, chịu hóa chất</li>
+                        <li><i class="fas fa-check"></i> Sơn chống ăn mòn cho kim loại</li>
+                        <li><i class="fas fa-check"></i> Sơn epoxy cho sàn nhà xưởng</li>
+                        <li><i class="fas fa-check"></i> Sơn trang trí hiệu ứng đặc biệt</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-certificate"></i> Chất Lượng Đảm Bảo</h3>
+                    <p>Tất cả sản phẩm sơn tại Ruby Group đều được nhập khẩu chính hãng hoặc sản xuất theo tiêu chuẩn quốc tế, có đầy đủ giấy tờ chứng nhận chất lượng và xuất xứ rõ ràng.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Cam kết 100% hàng chính hãng</li>
+                        <li><i class="fas fa-check"></i> Giấy chứng nhận an toàn sức khỏe</li>
+                        <li><i class="fas fa-check"></i> Bảo hành dài hạn theo chính sách nhà sản xuất</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ đổi trả nếu có lỗi từ nhà sản xuất</li>
+                        <li><i class="fas fa-check"></i> Kiểm tra chất lượng trước khi giao hàng</li>
+                        <li><i class="fas fa-check"></i> Hướng dẫn sử dụng chi tiết</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-palette"></i> Tư Vấn Chọn Màu</h3>
+                    <p>Đội ngũ chuyên viên giàu kinh nghiệm của Ruby Group luôn sẵn sàng tư vấn giúp bạn chọn lựa màu sắc, loại sơn phù hợp nhất với không gian và mục đích sử dụng.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Bảng màu đa dạng hơn 5000 màu</li>
+                        <li><i class="fas fa-check"></i> Pha màu theo yêu cầu chính xác</li>
+                        <li><i class="fas fa-check"></i> Tư vấn phối màu hài hòa</li>
+                        <li><i class="fas fa-check"></i> Dùng thử màu miễn phí</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ thiết kế phối màu 3D</li>
+                        <li><i class="fas fa-check"></i> Tính toán định mức sơn chính xác</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-truck"></i> Giao Hàng & Dịch Vụ</h3>
+                    <p>Ruby Group cam kết giao hàng nhanh chóng, đúng hạn với dịch vụ chăm sóc khách hàng tận tâm, đảm bảo trải nghiệm mua sắm thuận lợi và hài lòng nhất.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Giao hàng toàn quốc</li>
+                        <li><i class="fas fa-check"></i> Miễn phí vận chuyển đơn hàng lớn</li>
+                        <li><i class="fas fa-check"></i> Đóng gói cẩn thận, chuyên nghiệp</li>
+                        <li><i class="fas fa-check"></i> Thanh toán linh hoạt nhiều hình thức</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ kỹ thuật sau bán</li>
+                        <li><i class="fas fa-check"></i> Chương trình khách hàng thân thiết</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paint Products -->
+    <section class="content-section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Các Dòng Sản Phẩm Sơn</h2>
+                <div class="divider"></div>
+                <p>Đa Dạng Sản Phẩm Phục Vụ Mọi Nhu Cầu</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sơn Nội Thất">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sơn Nội Thất Cao Cấp</h3>
+                        <p>Sơn nội thất thân thiện môi trường, không mùi, dễ thi công, màu sắc đẹp lâu phai. Phù hợp cho phòng khách, phòng ngủ, văn phòng.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sơn Ngoại Thất">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sơn Ngoại Thất Chống Thấm</h3>
+                        <p>Sơn chống thấm vượt trội, chịu được mọi điều kiện thời tiết khắc nghiệt. Bảo vệ tường ngoài khỏi nấm mốc, rêu xanh.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sơn Công Nghiệp">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sơn Công Nghiệp</h3>
+                        <p>Sơn chịu nhiệt cao, chống ăn mòn, chống hóa chất. Ứng dụng trong nhà máy, xưởng sản xuất, kho bãi công nghiệp.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sơn Gỗ">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sơn Gỗ & Đồ Gỗ</h3>
+                        <p>Sơn bảo vệ và tôn lên vẻ đẹp tự nhiên của gỗ. Chống mối mọt, chống thấm nước, giữ màu gỗ bền đẹp.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/159045/the-interior-of-the-repair-interior-design-159045.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sơn Epoxy">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sơn Epoxy Sàn</h3>
+                        <p>Sơn epoxy cho sàn nhà xưởng, garage, showroom. Chống trầy xước, dễ vệ sinh, độ bền cao.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sơn Hiệu Ứng">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sơn Hiệu Ứng Đặc Biệt</h3>
+                        <p>Sơn tạo hiệu ứng nghệ thuật độc đáo như giả đá, giả gỗ, kim tuyến, rạn nứt. Tạo điểm nhấn ấn tượng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Paint -->
+    <section class="content-section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tại Sao Chọn Sơn Tại Ruby Group?</h2>
+                <div class="divider"></div>
+                <p>Những Lợi Ích Vượt Trội Khi Mua Sơn Tại Ruby Group</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-dollar-sign"></i> Giá Cả Cạnh Tranh Nhất</h3>
+                    <p>Là đại lý ủy quyền của nhiều thương hiệu lớn, Ruby Group luôn có mức giá tốt nhất thị trường. Chính sách chiết khấu hấp dẫn cho khách hàng mua số lượng lớn và khách hàng thường xuyên.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-shipping-fast"></i> Giao Hàng Nhanh Chóng</h3>
+                    <p>Hệ thống kho hàng rộng khắp cả nước đảm bảo giao hàng nhanh chóng trong ngày tại nội thành các thành phố lớn. Cam kết giao đúng hẹn, đóng gói cẩn thận.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-user-tie"></i> Tư Vấn Chuyên Nghiệp</h3>
+                    <p>Đội ngũ tư vấn viên được đào tạo bài bản, có kiến thức sâu về sơn và ứng dụng. Tư vấn miễn phí về lựa chọn sản phẩm, phối màu, tính toán định mức và kỹ thuật thi công.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-tools"></i> Hỗ Trợ Kỹ Thuật</h3>
+                    <p>Đội ngũ kỹ thuật viên giàu kinh nghiệm sẵn sàng hỗ trợ giải đáp mọi vấn đề kỹ thuật trong quá trình thi công. Hướng dẫn chi tiết về cách sử dụng và bảo quản sơn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="content-section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Liên Hệ Ngay Để Nhận Báo Giá Tốt Nhất</h2>
+                <div class="divider"></div>
+                <p>Hotline: 1900 xxxx - 0123 456 789</p>
+                <a href="index.html#contact" class="btn-primary" style="margin-top: 20px;">Liên Hệ Ngay</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-section">
+          <h3>Tập Đoàn Ruby Group</h3>
+          <p>Ruby Group – Tập đoàn đa lĩnh vực hàng đầu Việt Nam, chuyên cung cấp sơn cao cấp, dịch vụ tư vấn – thiết kế nội ngoại thất và hệ thống thẩm mỹ viện công nghệ cao.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100063476167758"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://zalo.me/0815023789"><i class="fas fa-comment-dots"></i></a>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Liên Hệ</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Trụ sở chính: Số 68 Nguyễn Trãi, Quận Thanh Xuân, Hà Nội, Việt Nam</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:0815023789">0815.023.789</a></p>
+            <p><i class="fas fa-envelope"></i> tapdoanrubygroup@gmail.com</p>
+            <p><i class="fas fa-clock"></i> 8:00 - 20:00 (Thứ 2 - Chủ nhật)</p>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Dịch Vụ Chính</h3>
+          <ul>
+            <li><a href="son.html">Phân Phối Sơn Ruby Premium</a></li>
+            <li><a href="thiet-ke.html">Tư Vấn & Thiết Kế Nội Thất</a></li>
+            <li><a href="tham-my.html">Thẩm Mỹ Viện Ruby Group</a></li>
+            <li><a href="contact.html">Đào Tạo & Hợp Tác Đại Lý</a></li>
+            <li><a href="contact.html">Hỗ Trợ Khách Hàng</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Bản Đồ & Chi Nhánh</h3>
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3437.5977926090286!2d105.78300257522214!3d19.736404581608905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2s!4v1759818344086!5m2!1sen!2s"
+              width="100%" 
+              height="300" 
+              style="border:0; border-radius: 10px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <ul style="margin-top: 15px;">
+            <li><a href="lien-he.html">Chi Nhánh Hà Nội</a></li>
+            <li><a href="lien-he.html">Chi Nhánh TP. Hồ Chí Minh</a></li>
+            <li><a href="lien-he.html">Chi Nhánh Thanh Hóa</a></li>
+            <li><a href="lien-he.html">Chi Nhánh Nghệ An</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tập Đoàn Ruby Group. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+    <script src="main.js"></script>
+</body>
+</html>

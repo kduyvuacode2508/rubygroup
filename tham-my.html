@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thẩm Mỹ Viện Ruby - Hệ thống thẩm mỹ viện 5 sao với công nghệ hiện đại. Chăm sóc da, điều trị thẩm mỹ, spa cao cấp. Đội ngũ bác sĩ chuyên nghiệp.">
+    <meta name="keywords" content="thẩm mỹ viện, chăm sóc da, điều trị mụn, trẻ hóa da, spa, Ruby Group">
+    <title>Thẩm Mỹ Viện Ruby | Ruby Group</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-gem"></i>
+                            <span>RUBY GROUP</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="son.html">Bán Sơn</a></li>
+                        <li><a href="tham-my.html" class="active">Thẩm Mỹ Viện</a></li>
+                        <li><a href="thiet-ke.html">Tư Vấn Thiết Kế</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;">
+                <div class="slide-content">
+                    <h1>Chào Mừng Đến Với Ruby Group</h1>
+                    <p>Đối Tác Tin Cậy Cho Mọi Nhu Cầu Của Bạn</p>
+                    <a href="#services" class="btn-primary">Khám Phá Ngay</a>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;">
+                <div class="slide-content">
+                    <h1>Chất Lượng Là Ưu Tiên Hàng Đầu</h1>
+                    <p>20+ Năm Kinh Nghiệm Trong Ngành</p>
+                    <a href="#about" class="btn-primary">Tìm Hiểu Thêm</a>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;">
+                <div class="slide-content">
+                    <h1>Dịch Vụ Đa Dạng Chuyên Nghiệp</h1>
+                    <p>Giải Pháp Toàn Diện Cho Mọi Khách Hàng</p>
+                    <a href="#services" class="btn-primary">Xem Dịch Vụ</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>Về Thẩm Mỹ Viện Ruby Group</h2>
+            <div class="divider"></div>
+            <p>Hành Trình Nâng Tầm Vẻ Đẹp Việt Cùng Ruby Group</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.pexels.com/photos/853427/pexels-photo-853427.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Thẩm Mỹ Viện Ruby Group">
+            </div>
+            <div class="about-text">
+                <h3>Hệ Thống Thẩm Mỹ Cao Cấp Hàng Đầu Việt Nam</h3>
+                <p>Thẩm Mỹ Viện <strong>Ruby Group</strong> là thương hiệu làm đẹp uy tín trực thuộc tập đoàn Ruby Group, hoạt động với sứ mệnh “Tôn vinh vẻ đẹp tự nhiên – Nâng tầm phong thái Việt”. Với hơn 20 năm kinh nghiệm trong lĩnh vực làm đẹp, Ruby Group đã và đang dẫn đầu xu hướng thẩm mỹ hiện đại, ứng dụng công nghệ tiên tiến hàng đầu thế giới.</p>
+                <p>Chúng tôi chuyên cung cấp các dịch vụ: <strong>chăm sóc da chuyên sâu, trẻ hóa làn da, phun xăm thẩm mỹ, giảm béo công nghệ cao, thẩm mỹ không phẫu thuật</strong>… mang đến sự tự tin và vẻ đẹp hoàn hảo cho hàng chục nghìn khách hàng trên toàn quốc.</p>
+                <p>Đội ngũ chuyên gia, bác sĩ giàu kinh nghiệm cùng hệ thống trang thiết bị đạt chuẩn quốc tế giúp Ruby Group luôn khẳng định vị thế thương hiệu thẩm mỹ uy tín, chất lượng và đẳng cấp.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-spa"></i>
+                        <h4>20+</h4>
+                        <p>Năm Kinh Nghiệm Làm Đẹp</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-heart"></i>
+                        <h4>100,000+</h4>
+                        <p>Khách Hàng Hài Lòng</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clinic-medical"></i>
+                        <h4>30+</h4>
+                        <p>Cơ Sở Thẩm Mỹ Toàn Quốc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- About Beauty Spa -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Về Thẩm Mỹ Viện Ruby</h2>
+                <div class="divider"></div>
+                <p>Hệ Thống Thẩm Mỹ Viện Đẳng Cấp 5 Sao</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-spa"></i> Công Nghệ Hiện Đại</h3>
+                    <p>Thẩm Mỹ Viện Ruby đầu tư hệ thống máy móc thiết bị thẩm mỹ hiện đại nhất từ Hàn Quốc, Nhật Bản, Mỹ. Áp dụng các công nghệ tiên tiến nhất trong điều trị và chăm sóc sắc đẹp.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Công nghệ Laser IPL điều trị da</li>
+                        <li><i class="fas fa-check"></i> Công nghệ RF nâng cơ trẻ hóa</li>
+                        <li><i class="fas fa-check"></i> Công nghệ Hifu trẻ hóa không xâm lấn</li>
+                        <li><i class="fas fa-check"></i> Máy phân tích da chuyên sâu</li>
+                        <li><i class="fas fa-check"></i> Thiết bị điều trị mụn công nghệ cao</li>
+                        <li><i class="fas fa-check"></i> Hệ thống spa massage hiện đại</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-user-md"></i> Đội Ngũ Chuyên Gia</h3>
+                    <p>Đội ngũ bác sĩ, chuyên viên thẩm mỹ tại Ruby đều được đào tạo chuyên sâu, có bằng cấp chứng chỉ hành nghề, giàu kinh nghiệm và tay nghề cao trong lĩnh vực thẩm mỹ da liễu.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Bác sĩ da liễu có chứng chỉ hành nghề</li>
+                        <li><i class="fas fa-check"></i> Chuyên viên thẩm mỹ giàu kinh nghiệm</li>
+                        <li><i class="fas fa-check"></i> Đào tạo chuyên sâu tại Hàn Quốc</li>
+                        <li><i class="fas fa-check"></i> Cập nhật kiến thức liên tục</li>
+                        <li><i class="fas fa-check"></i> Tư vấn tận tâm, chuyên nghiệp</li>
+                        <li><i class="fas fa-check"></i> Theo dõi sát sao quá trình điều trị</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-microscope"></i> Quy Trình Chuẩn Y Khoa</h3>
+                    <p>Mọi liệu trình điều trị tại Ruby đều tuân thủ nghiêm ngặt quy trình chuẩn y khoa, đảm bảo an toàn tuyệt đối cho khách hàng với các bước kiểm tra và theo dõi sát sao.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Khám và phân tích da chi tiết</li>
+                        <li><i class="fas fa-check"></i> Tư vấn phương pháp phù hợp</li>
+                        <li><i class="fas fa-check"></i> Thực hiện theo quy trình chuẩn</li>
+                        <li><i class="fas fa-check"></i> Vô trùng, vệ sinh tuyệt đối</li>
+                        <li><i class="fas fa-check"></i> Theo dõi sau điều trị</li>
+                        <li><i class="fas fa-check"></i> Cam kết hiệu quả rõ rệt</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-building"></i> Không Gian Sang Trọng</h3>
+                    <p>Thẩm Mỹ Viện Ruby được thiết kế sang trọng, tinh tế với không gian riêng tư, thoải mái. Mang đến trải nghiệm thư giãn và chăm sóc sắc đẹp đẳng cấp 5 sao.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Phòng điều trị riêng tư sang trọng</li>
+                        <li><i class="fas fa-check"></i> Khu vực chờ tiện nghi</li>
+                        <li><i class="fas fa-check"></i> Phòng tắm, thay đồ hiện đại</li>
+                        <li><i class="fas fa-check"></i> Hệ thống âm thanh ánh sáng thư giãn</li>
+                        <li><i class="fas fa-check"></i> Không khí trong lành, mát mẻ</li>
+                        <li><i class="fas fa-check"></i> Dịch vụ chăm sóc chu đáo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beauty Services -->
+    <section class="content-section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dịch Vụ Thẩm Mỹ</h2>
+                <div class="divider"></div>
+                <p>Giải Pháp Toàn Diện Cho Làn Da Hoàn Hảo</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3985321/pexels-photo-3985321.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chăm Sóc Da Mặt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chăm Sóc Da Mặt Chuyên Sâu</h3>
+                        <p>Liệu trình chăm sóc da toàn diện với công nghệ Hàn Quốc. Làm sạch sâu, cấp ẩm, dưỡng trắng, phục hồi da. Phù hợp mọi loại da.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Điều Trị Mụn">
+                    </div>
+                    <div class="product-info">
+                        <h3>Điều Trị Mụn Hiệu Quả</h3>
+                        <p>Điều trị mụn từ gốc bằng công nghệ IPL và thuốc điều trị chuyên sâu. Giảm viêm, kiểm soát bã nhờn, làm mờ vết thâm nhanh chóng.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3764013/pexels-photo-3764013.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Trị Nám">
+                    </div>
+                    <div class="product-info">
+                        <h3>Trị Nám - Tàn Nhang</h3>
+                        <p>Công nghệ Laser Q-Switch điều trị nám, tàn nhang, đốm nâu an toàn hiệu quả. Không đau, không để lại scar, phục hồi nhanh.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3985322/pexels-photo-3985322.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Trẻ Hóa Da">
+                    </div>
+                    <div class="product-info">
+                        <h3>Trẻ Hóa Da - Nâng Cơ</h3>
+                        <p>Công nghệ Hifu, RF giúp căng bóng da, xóa nhăn, nâng cơ không xâm lấn. Da trở nên săn chắc, tươi trẻ tự nhiên.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/4046718/pexels-photo-4046718.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Spa Body">
+                    </div>
+                    <div class="product-info">
+                        <h3>Spa Body - Massage</h3>
+                        <p>Liệu trình spa toàn thân thư giãn sâu. Massage trị liệu, tẩy da chết, dưỡng trắng body, giúp xả stress hiệu quả.</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Triệt Lông">
+                    </div>
+                    <div class="product-info">
+                        <h3>Triệt Lông Vĩnh Viễn</h3>
+                        <p>Công nghệ Laser Diode triệt lông vĩnh viễn an toàn, không đau. Phù hợp mọi vùng da, mọi loại lông, mọi màu da.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Process -->
+    <section class="content-section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quy Trình Điều Trị Tại Ruby</h2>
+                <div class="divider"></div>
+                <p>6 Bước Đảm Bảo Hiệu Quả Tối Ưu</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-clipboard-check"></i> Bước 1: Tư Vấn & Khám Da</h3>
+                    <p>Bác sĩ thẩm mỹ tư vấn chi tiết, sử dụng máy phân tích da chuyên sâu để đánh giá tình trạng da, xác định vấn đề cần điều trị và mục tiêu làm đẹp của khách hàng.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-notes-medical"></i> Bước 2: Thiết Kế Liệu Trình</h3>
+                    <p>Dựa trên tình trạng da và nhu cầu của khách hàng, bác sĩ thiết kế liệu trình điều trị cá nhân hóa, phù hợp nhất với từng trường hợp cụ thể.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-file-contract"></i> Bước 3: Cam Kết & Báo Giá</h3>
+                    <p>Báo giá chi tiết, minh bạch. Ký hợp đồng cam kết hiệu quả điều trị. Khách hàng hoàn toàn yên tâm về chất lượng và quyền lợi của mình.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-hand-sparkles"></i> Bước 4: Chuẩn Bị Da</h3>
+                    <p>Làm sạch da kỹ lưỡng, tẩy tế bào chết, chuẩn bị da ở trạng thái tốt nhất để đạt hiệu quả cao nhất trong quá trình điều trị.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-star-of-life"></i> Bước 5: Thực Hiện Điều Trị</h3>
+                    <p>Thực hiện điều trị theo quy trình chuẩn y khoa với trang thiết bị hiện đại, đảm bảo vô trùng, an toàn tuyệt đối cho khách hàng.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-heartbeat"></i> Bước 6: Chăm Sóc Sau Điều Trị</h3>
+                    <p>Hướng dẫn chăm sóc da tại nhà, theo dõi tiến trình, tái khám định kỳ. Hỗ trợ 24/7 nếu có bất kỳ thắc mắc nào trong quá trình phục hồi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="content-section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cam Kết Của Thẩm Mỹ Viện Ruby</h2>
+                <div class="divider"></div>
+                <p>An Toàn - Hiệu Quả - Uy Tín</p>
+            </div>
+            <div class="content-grid">
+                <div class="content-card">
+                    <h3><i class="fas fa-shield-alt"></i> An Toàn Tuyệt Đối</h3>
+                    <p>Cam kết sử dụng thiết bị chính hãng, mỹ phẩm nguồn gốc rõ ràng. Quy trình vô trùng nghiêm ngặt. Bác sĩ theo dõi sát sao suốt quá trình điều trị để đảm bảo an toàn tuyệt đối cho khách hàng.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-chart-line"></i> Hiệu Quả Rõ Rệt</h3>
+                    <p>Cam kết mang lại hiệu quả rõ rệt, có thể thấy sau liệu trình. Nếu không đạt kết quả như cam kết, chúng tôi sẽ điều trị lại hoặc hoàn lại chi phí cho khách hàng.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-hand-holding-usd"></i> Giá Cả Hợp Lý</h3>
+                    <p>Bảng giá công khai, minh bạch, cạnh tranh nhất thị trường. Nhiều chương trình ưu đãi, khuyến mại hấp dẫn quanh năm. Hỗ trợ trả góp 0% lãi suất cho các liệu trình dài ngày.</p>
+                </div>
+                <div class="content-card">
+                    <h3><i class="fas fa-user-shield"></i> Bảo Mật Thông Tin</h3>
+                    <p>Cam kết bảo mật tuyệt đối thông tin khách hàng. Không gian điều trị riêng tư, kín đáo. Mọi thông tin cá nhân và hồ sơ điều trị đều được lưu trữ an toàn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="content-section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Đặt Lịch Tư Vấn Miễn Phí</h2>
+                <div class="divider"></div>
+                <p>Hotline: 1900 xxxx - 0123 456 789</p>
+                <a href="index.html#contact" class="btn-primary" style="margin-top: 20px;">Đặt Lịch Ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3><i class="fas fa-gem"></i> Ruby Group</h3>
+                    <p>Tập đoàn đa ngành uy tín hàng đầu Việt Nam với hơn 20 năm kinh nghiệm phục vụ khách hàng.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="son.html">Bán Sơn</a></li>
+                        <li><a href="tham-my.html">Thẩm Mỹ Viện</a></li>
+                        <li><a href="thiet-ke.html">Tư Vấn Thiết Kế</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Thông Tin</h4>
+                    <ul>
+                        <li><a href="index.html#about">Về Chúng Tôi</a></li>
+                        <li><a href="index.html#services">Dịch Vụ</a></li>
+                        <li><a href="index.html#contact">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Huệ, Q1, HCM</li>
+                        <li><i class="fas fa-phone"></i> 1900 xxxx</li>
+                        <li><i class="fas fa-envelope"></i> info@rubygroup.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ruby Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

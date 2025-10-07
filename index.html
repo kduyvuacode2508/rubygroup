@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ruby Group - Tập đoàn đa ngành hàng đầu chuyên về bán sơn, thẩm mỹ viện và tư vấn thiết kế nội thất. Uy tín, chất lượng, chuyên nghiệp.">
+    <meta name="keywords" content="Ruby Group, bán sơn, thẩm mỹ viện, tư vấn thiết kế, nội thất, tập đoàn đa ngành">
+    <title>Ruby Group - Tập Đoàn Đa Ngành Uy Tín Hàng Đầu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <i class="fas fa-gem"></i>
+                            <span>RUBY GROUP</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="active">Trang Chủ</a></li>
+                        <li><a href="son.html">Bán Sơn</a></li>
+                        <li><a href="tham-my.html">Thẩm Mỹ Viện</a></li>
+                        <li><a href="thiet-ke.html">Tư Vấn Thiết Kế</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop') center/cover;">
+                <div class="slide-content">
+                    <h1>Chào Mừng Đến Với Ruby Group</h1>
+                    <p>Đối Tác Tin Cậy Cho Mọi Nhu Cầu Của Bạn</p>
+                    <a href="#services" class="btn-primary">Khám Phá Ngay</a>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;">
+                <div class="slide-content">
+                    <h1>Chất Lượng Là Ưu Tiên Hàng Đầu</h1>
+                    <p>20+ Năm Kinh Nghiệm Trong Ngành</p>
+                    <a href="#about" class="btn-primary">Tìm Hiểu Thêm</a>
+                </div>
+            </div>
+            <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;">
+                <div class="slide-content">
+                    <h1>Dịch Vụ Đa Dạng Chuyên Nghiệp</h1>
+                    <p>Giải Pháp Toàn Diện Cho Mọi Khách Hàng</p>
+                    <a href="#services" class="btn-primary">Xem Dịch Vụ</a>
+                </div>
+            </div>
+        </div>
+        <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Về Ruby Group</h2>
+                <div class="divider"></div>
+                <p>Hành Trình Phát Triển Và Cam Kết Của Chúng Tôi</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ruby Group Building">
+                </div>
+                <div class="about-text">
+                    <h3>Tập Đoàn Đa Ngành Uy Tín</h3>
+                    <p>Ruby Group được thành lập từ năm 2003, với hơn 20 năm kinh nghiệm trong nhiều lĩnh vực kinh doanh và dịch vụ. Chúng tôi tự hào là một trong những tập đoàn đa ngành hàng đầu tại Việt Nam, luôn đặt chất lượng và sự hài lòng của khách hàng lên hàng đầu.</p>
+                    <p>Với đội ngũ chuyên gia giàu kinh nghiệm, cơ sở vật chất hiện đại và quy trình làm việc chuyên nghiệp, Ruby Group cam kết mang đến những sản phẩm và dịch vụ tốt nhất cho khách hàng trên khắp cả nước.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-award"></i>
+                            <h4>20+</h4>
+                            <p>Năm Kinh Nghiệm</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h4>10,000+</h4>
+                            <p>Khách Hàng Tin Dùng</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-building"></i>
+                            <h4>50+</h4>
+                            <p>Chi Nhánh Toàn Quốc</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tại Sao Chọn Ruby Group?</h2>
+                <div class="divider"></div>
+                <p>Những Giá Trị Cốt Lõi Tạo Nên Sự Khác Biệt</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Uy Tín Lâu Năm</h3>
+                    <p>Hơn 20 năm xây dựng và phát triển, Ruby Group đã khẳng định được vị thế vững chắc trên thị trường với uy tín được khách hàng tin tưởng tuyệt đối.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Chất Lượng Đảm Bảo</h3>
+                    <p>Mọi sản phẩm và dịch vụ đều được kiểm định chất lượng nghiêm ngặt, đảm bảo đáp ứng và vượt xa mong đợi của khách hàng.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Chuyên Nghiệp</h3>
+                    <p>Đội ngũ nhân viên được đào tạo bài bản, có tay nghề cao, luôn sẵn sàng tư vấn và hỗ trợ khách hàng một cách tận tình nhất.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Giá Cả Cạnh Tranh</h3>
+                    <p>Chính sách giá linh hoạt, nhiều ưu đãi hấp dẫn, đảm bảo mang lại giá trị tốt nhất cho từng đồng tiền khách hàng bỏ ra.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Hỗ Trợ 24/7</h3>
+                    <p>Dịch vụ chăm sóc khách hàng hoạt động suốt 24/7, sẵn sàng giải đáp mọi thắc mắc và xử lý các vấn đề phát sinh nhanh chóng.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bảo Hành Dài Hạn</h3>
+                    <p>Cam kết bảo hành dài hạn cho mọi sản phẩm và dịch vụ, đảm bảo quyền lợi tối đa cho khách hàng trong suốt thời gian sử dụng.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lĩnh Vực Hoạt Động</h2>
+                <div class="divider"></div>
+                <p>Các Dịch Vụ Chuyên Nghiệp Của Ruby Group</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1: Bán Sơn -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bán Sơn">
+                        <div class="service-overlay">
+                            <a href="son.html" class="btn-secondary">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-roller"></i>
+                        </div>
+                        <h3>Bán Sơn Chuyên Nghiệp</h3>
+                        <p>Cung cấp đa dạng các loại sơn chất lượng cao từ các thương hiệu uy tín trong và ngoài nước. Sơn nội thất, ngoại thất, sơn công nghiệp, sơn chống thấm, sơn trang trí đặc biệt.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Sơn nội thất cao cấp - thân thiện môi trường</li>
+                            <li><i class="fas fa-check-circle"></i> Sơn ngoại thất chống thấm - bền màu</li>
+                            <li><i class="fas fa-check-circle"></i> Sơn công nghiệp - chịu nhiệt cao</li>
+                            <li><i class="fas fa-check-circle"></i> Tư vấn chọn màu & bảng màu đa dạng</li>
+                            <li><i class="fas fa-check-circle"></i> Giá cả cạnh tranh - chiết khấu hấp dẫn</li>
+                            <li><i class="fas fa-check-circle"></i> Giao hàng nhanh chóng toàn quốc</li>
+                        </ul>
+                        <a href="son.html" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Thẩm Mỹ Viện -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/3985321/pexels-photo-3985321.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Thẩm Mỹ Viện">
+                        <div class="service-overlay">
+                            <a href="tham-my.html" class="btn-secondary">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Thẩm Mỹ Viện Ruby</h3>
+                        <p>Hệ thống thẩm mỹ viện đẳng cấp 5 sao với công nghệ hiện đại, đội ngũ bác sĩ giàu kinh nghiệm. Chuyên các dịch vụ chăm sóc da, điều trị thẩm mỹ, spa cao cấp.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Chăm sóc da mặt chuyên sâu - công nghệ Hàn Quốc</li>
+                            <li><i class="fas fa-check-circle"></i> Điều trị mụn - thâm - nám hiệu quả</li>
+                            <li><i class="fas fa-check-circle"></i> Trẻ hóa da - căng bóng tự nhiên</li>
+                            <li><i class="fas fa-check-circle"></i> Spa body - massage trị liệu</li>
+                            <li><i class="fas fa-check-circle"></i> Tư vấn miễn phí - cam kết hiệu quả</li>
+                            <li><i class="fas fa-check-circle"></i> Không gian sang trọng - riêng tư</li>
+                        </ul>
+                        <a href="tham-my.html" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Tư Vấn Thiết Kế -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tư Vấn Thiết Kế">
+                        <div class="service-overlay">
+                            <a href="thiet-ke.html" class="btn-secondary">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <h3>Tư Vấn & Thiết Kế Nội Thất</h3>
+                        <p>Dịch vụ tư vấn và thiết kế nội thất trọn gói với đội ngũ kiến trúc sư chuyên nghiệp. Từ nhà ở, văn phòng đến showroom, khách sạn, đều được thiết kế theo phong cách riêng.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Thiết kế nội thất nhà ở - hiện đại, sang trọng</li>
+                            <li><i class="fas fa-check-circle"></i> Thiết kế văn phòng - tối ưu không gian</li>
+                            <li><i class="fas fa-check-circle"></i> Thiết kế showroom - thu hút khách hàng</li>
+                            <li><i class="fas fa-check-circle"></i> Thi công trọn gói - giám sát chặt chẽ</li>
+                            <li><i class="fas fa-check-circle"></i> Bảo hành dài hạn - hỗ trợ sau bán</li>
+                            <li><i class="fas fa-check-circle"></i> Tư vấn miễn phí - báo giá chi tiết</li>
+                        </ul>
+                        <a href="thiet-ke.html" class="service-link">Tìm hiểu thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Liên Hệ Với Chúng Tôi</h2>
+                <div class="divider"></div>
+                <p>Hãy Để Ruby Group Đồng Hành Cùng Bạn</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Địa Chỉ</h4>
+                            <p>123 Đường Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Điện Thoại</h4>
+                            <p>1900 xxxx - 0123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@rubygroup.vn</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Giờ Làm Việc</h4>
+                            <p>Thứ 2 - Thứ 7: 8:00 - 18:00<br>Chủ Nhật: 8:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Họ và Tên *" required>
+                    <input type="email" placeholder="Email *" required>
+                    <input type="tel" placeholder="Số Điện Thoại *" required>
+                    <textarea placeholder="Nội dung tin nhắn *" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Gửi Tin Nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-section">
+          <h3>Tập Đoàn Ruby Group</h3>
+          <p>Ruby Group – Tập đoàn đa lĩnh vực hàng đầu Việt Nam, chuyên cung cấp sơn cao cấp, dịch vụ tư vấn – thiết kế nội ngoại thất và hệ thống thẩm mỹ viện công nghệ cao.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100063476167758"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://zalo.me/0815023789"><i class="fas fa-comment-dots"></i></a>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Liên Hệ</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Trụ sở chính: Số 68 Nguyễn Trãi, Quận Thanh Xuân, Hà Nội, Việt Nam</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:0815023789">0815.023.789</a></p>
+            <p><i class="fas fa-envelope"></i> tapdoanrubygroup@gmail.com</p>
+            <p><i class="fas fa-clock"></i> 8:00 - 20:00 (Thứ 2 - Chủ nhật)</p>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Dịch Vụ Chính</h3>
+          <ul>
+            <li><a href="son.html">Phân Phối Sơn Ruby Premium</a></li>
+            <li><a href="tu-van.html">Tư Vấn & Thiết Kế Nội Thất</a></li>
+            <li><a href="tham-my.html">Thẩm Mỹ Viện Ruby Group</a></li>
+            <li><a href="dao-tao.html">Đào Tạo & Hợp Tác Đại Lý</a></li>
+            <li><a href="lien-he.html">Hỗ Trợ Khách Hàng</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Bản Đồ & Chi Nhánh</h3>
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3437.5977926090286!2d105.78300257522214!3d19.736404581608905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2s!4v1759818344086!5m2!1sen!2s"
+              width="100%" 
+              height="300" 
+              style="border:0; border-radius: 10px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <ul style="margin-top: 15px;">
+            <li><a href="contact.html">Chi Nhánh Hà Nội</a></li>
+            <li><a href="contact.html">Chi Nhánh TP. Hồ Chí Minh</a></li>
+            <li><a href="contact.html">Chi Nhánh Thanh Hóa</a></li>
+            <li><a href="contact.html">Chi Nhánh Nghệ An</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tập Đoàn Ruby Group. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+  
+    <script src="main.js"></script>
+</body>
+</html>
