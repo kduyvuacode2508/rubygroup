@@ -27,6 +27,9 @@ body {
     color: var(--text-dark);
     overflow-x: hidden;
 }
+.lienhe{
+    width: 100%;
+}
 
 .container {
     max-width: 1200px;
@@ -489,7 +492,7 @@ section::after {
     z-index: 1;
 }
 
-.section-header h1 {
+.section-header h2 {
     font-size: 45px;
     color: var(--text-dark);
     margin-bottom: 15px;
