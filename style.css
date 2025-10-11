@@ -1881,6 +1881,8 @@ color: #ffffff;
    
 }
 
+
+
 .product-image::before {
     content: '';
     position: absolute;
@@ -1898,25 +1900,32 @@ color: #ffffff;
     opacity: 1;
 }
 
-.product-image::after {
-    content: 'Xem chi tiết';
+.product-image .view-detail {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color), var(--light-blue));
-    background-size: 200% 200%;
-    color: white;
+    color: #fff;
     padding: 12px 25px;
     border-radius: 25px;
     font-weight: 600;
+    text-decoration: none;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 2;
     box-shadow: 0 8px 25px rgba(0, 61, 92, 0.5);
-    animation: buttonGlow 2s ease infinite;
 }
 
+.product-item:hover .view-detail {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.product-image .view-detail:hover {
+    background: linear-gradient(135deg, var(--light-blue), var(--accent-color));
+    transform: translate(-50%, -50%) scale(1.1);
+}
 @keyframes buttonGlow {
     0%, 100% {
         background-position: 0% 50%;
@@ -2598,4 +2607,13 @@ color: #ffffff;
     .manufacturing-info p {
         font-size: 15px;
     }
+}
+
+
+.content-section.full-bg {
+    background: var(--bg-light);
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    
+    padding: 100px 0;
 }
