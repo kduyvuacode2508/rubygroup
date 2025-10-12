@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Danh sách đầy đủ các sản phẩm sơn RBY GROUP - Chất lượng cao, giá cạnh tranh">
+    <meta name="keywords" content="sơn RBY, sơn nội thất, sơn ngoại thất, sơn chống thấm, sơn lót">
+    <title>Sản Phẩm Sơn RBY GROUP | Danh Mục Đầy Đủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./anh/logorby.png">
+    <link rel="stylesheet" href="style.css">
+   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #003d5c;
+            --secondary-color: #005073;
+            --accent-color: #006a8a;
+            --light-blue: #0088aa;
+            --text-dark: #1a2332;
+            --text-light: #5a6b7d;
+            --bg-light: #e8f4f8;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 61, 92, 0.15);
+            --shadow-hover: 0 12px 40px rgba(0, 61, 92, 0.35);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--primary-color);
+            background: var(--bg-light);
+        }
+
+        /* Page Header */
+        .page-header {
+            margin-top: 70px;
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(0, 61, 92, 0.95), rgba(0, 136, 170, 0.9)),
+                        url('https://images.pexels.com/photos/1669754/pexels-photo-1669754.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .page-header p {
+            font-size: 20px;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            padding: 40px 0;
+            background: var(--white);
+        }
+
+        .filter-controls {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid var(--bg-light);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            background: var(--white);
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Products Grid */
+        .products-section {
+            padding: 60px 0;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-color);
+        }
+
+        .product-image {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+
+        .product-code {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-brand {
+            display: inline-block;
+            background: var(--bg-light);
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            font-size: 20px;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-view {
+            flex: 1;
+            padding: 12px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background: var(--light-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: var(--white);
+            border-radius: 15px;
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: modalSlideIn 0.4s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            background: var(--light-blue);
+            transform: rotate(90deg);
+        }
+
+        .modal-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .modal-image {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .modal-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-details h2 {
+            font-size: 28px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .modal-info {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .modal-info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-info-item:last-child {
+            border-bottom: none;
+        }
+
+        .modal-info-label {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .modal-info-value {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .modal-description {
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--text-light);
+            margin-top: 20px;
+        }
+
+        .modal-cta {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn-contact {
+            flex: 1;
+            padding: 15px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-contact:hover {
+            background: var(--light-blue);
+            transform: translateY(-2px);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-light);
+            font-size: 18px;
+        }
+
+        .no-results i {
+            font-size: 60px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+
+            .filter-controls {
+                flex-direction: column;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-body {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="\">
+                            <img src="./anh/logorby.png" alt="">
+                            <span>RBY GROUP</span>
+                        </a>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="active">Trang Chủ</a></li>
+                        <li><a href="son.html"> Sản Xuất Sơn  </a></li>
+                        <li><a href="tham-my.html">Thẩm Mỹ Viện</a></li>
+                        <li><a href="thiet-ke.html">Tư Vấn Thiết Kế</a></li>
+                        <li><a href="thuong-hieu-rieng.html" >Mở Thương Hiệu Riêng</a></li>
+                        <li><a href="contact.html">Liên Hệ</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <!-- Hero Slider -->
+ <section class="hero-slider">
+    <div class="slider-container">
+        <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./anh/RBY_GROUP.png') center/cover;">
+            <div class="slide-content">
+                <h2>Chào Mừng Đến Với RBY Group </h2>
+                <p>Đối Tác Tin Cậy Cho Mọi Nhu Cầu Của Bạn</p>
+                <a href="contact.html" class="btn-primary">Khám Phá Ngay</a>
+            </div>
+        </div>
+        <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./anh/backgroud8.jpg') center/cover;">
+            <div class="slide-content">
+                <h2>Chất Lượng Là Ưu Tiên Hàng Đầu</h2>
+                <p>10+ Năm Kinh Nghiệm Trong Ngành</p>
+                <a href="contact.html" class="btn-primary">Tìm Hiểu Thêm</a>
+            </div>
+        </div>
+        <div class="slide" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover;">
+            <div class="slide-content">
+                <h2>Dịch Vụ Đa Dạng Chuyên Nghiệp</h2>
+                <p>Giải Pháp Toàn Diện Cho Mọi Khách Hàng</p>
+                <a href="contact.html" class="btn-primary">Xem Dịch Vụ</a>
+            </div>
+        </div>
+    </div>
+    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    <div class="slider-dots" id="sliderDots"></div>
+</section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tất Cả</button>
+                    <button class="filter-btn" data-filter="nội thất">Nội Thất</button>
+                    <button class="filter-btn" data-filter="ngoại thất">Ngoại Thất</button>
+                    <button class="filter-btn" data-filter="chống thấm">Chống Thấm</button>
+                    <button class="filter-btn" data-filter="lót">Sơn Lót</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid"></div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <p>Không tìm thấy sản phẩm phù hợp</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+   
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-section">
+          <h3>Tập Đoàn Rby Group</h3>
+          <p>Rby Group – Tập đoàn đa lĩnh vực hàng đầu Việt Nam, chuyên cung cấp sơn cao cấp, dịch vụ tư vấn – thiết kế nội ngoại thất và hệ thống thẩm mỹ viện công nghệ cao.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/rby.sonnano/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://zalo.me/0977912846"><i class="fas fa-comment-dots"></i></a>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Liên Hệ</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Trụ sở chính: Thôn Kim Sơn, xã Đông Tiến, huyện Đông Sơn, tỉnh Thanh Hóa</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:0977912846">0877.15.86.86 - 0946.565.893</a></p>
+            <p><i class="fas fa-envelope"></i> Sonnanorby.rbygroup@gmail.com</p>
+            <p><i class="fas fa-clock"></i> 8:00 - 20:00 (Thứ 2 - Chủ nhật)</p>
+          </div>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Dịch Vụ Chính</h3>
+          <ul>
+            <li><a href="son.html">Phân Phối Sơn Rby Premium</a></li>
+            <li><a href="thiet-ke.html">Tư Vấn & Thiết Kế Nội Thất</a></li>
+            <li><a href="tham-my.html">Thẩm Mỹ Viện Rby Group</a></li>
+            <li><a href="contact.html">Đào Tạo & Hợp Tác Đại Lý</a></li>
+            <li><a href="contact.html">Hỗ Trợ Khách Hàng</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section">
+          <h3>Bản Đồ & Chi Nhánh</h3>
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3437.5977926090286!2d105.78300257522214!3d19.736404581608905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2s!4v1759818344086!5m2!1sen!2s"
+              width="100%" 
+              height="300" 
+              style="border:0; border-radius: 10px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <ul style="margin-top: 15px;">
+            <li><a href="contact.html">Chi Nhánh Hà Nội</a></li>
+            <li><a href="contact.html">Chi Nhánh TP. Hồ Chí Minh</a></li>
+            <li><a href="contact.html">Chi Nhánh Thanh Hóa</a></li>
+            
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tập Đoàn Rby Group. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+   
+     <script src="main.js"></script>
+</body>
+</html>
