@@ -44,46 +44,7 @@
         }
 
         /* Header */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--white);
-            box-shadow: var(--shadow);
-            z-index: 1000;
-            border-bottom: 3px solid var(--primary-color);
-        }
-
-        .navbar {
-            padding: 15px 0;
-        }
-
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo a {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            color: var(--primary-color);
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .logo img {
-            height: 50px;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
+      
 
         .nav-menu a {
             text-decoration: none;
@@ -511,9 +472,10 @@
                     <ul class="nav-menu" id="navMenu">
                         <li><a href="index.html" class="active">Trang Chủ</a></li>
                         <li><a href="son.html"> Sản Xuất Sơn  </a></li>
-                        <li><a href="tham-my.html">Thẩm Mỹ Viện</a></li>
+                        <li><a href="tham-my.html">chăm sóc sức khỏe</a></li>
                         <li><a href="thiet-ke.html">Tư Vấn Thiết Kế</a></li>
                         <li><a href="thuong-hieu-rieng.html" >Mở Thương Hiệu Riêng</a></li>
+                        
                         <li><a href="contact.html">Liên Hệ</a></li>
                     </ul>
                     <div class="hamburger" id="hamburger">
@@ -525,6 +487,9 @@
             </div>
         </nav>
     </header>
+    <button id="viewProductsBtn" class="view-products-btn">
+        <a href="products.html"><i class="fas fa-paint-roller"></i> Xem Sản Phẩm</a>
+    </button>
 
    <!-- Hero Slider -->
  <section class="hero-slider">

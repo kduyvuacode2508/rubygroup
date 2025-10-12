@@ -449,4 +449,16 @@ document.addEventListener('keydown', function(e) {
 renderProducts();
 
 
+  document.getElementById("viewProductsBtn").addEventListener("click", function() {
+    const productSection = document.getElementById("products");
+    if (productSection) {
+      productSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      alert("Không tìm thấy danh sách sản phẩm!");
+    }
+  });
+
+
+
+
 
