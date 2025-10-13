@@ -2620,7 +2620,7 @@ color: #ffffff;
 .view-products-btn {
     position: fixed;
     top: 85px;
-    right: 25px;
+    right: 5px;
     background: linear-gradient(135deg, #007BFF, #00C6FF);
     color: white;
     border: none;
@@ -2636,7 +2636,7 @@ color: #ffffff;
     gap: 8px;
     transition: all 0.3s ease;
   }
-  .view-products-btn a{
+  .view-products-btn  a{
     text-decoration: none;
     color: whitesmoke;
   }
@@ -2648,6 +2648,38 @@ color: #ffffff;
   }
   
   .view-products-btn i {
+    font-size: 18px;
+  }
+  .view-color-btn{
+    position: fixed;
+    top: 140px;
+    right: 5px;
+    background: linear-gradient(135deg, #e18c14, #e61437);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+  .view-color-btn a{
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .view-color-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #0056D2, #0099FF);
+  }
+  
+  .view-color-btn i {
     font-size: 18px;
   }
   

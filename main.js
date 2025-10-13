@@ -310,6 +310,97 @@ const arrSon = [
         hangSon: "KING",
         image: "./anh/KR3300.png",
         moTa: "Dòng sơn cao cấp nhất với độ bóng như men sứ, khả năng chống bám bụi, kháng tia UV và tự làm sạch khi gặp mưa. Bề mặt sáng mịn, giữ màu cực lâu, phù hợp cho các công trình sang trọng và cao cấp."
+    },
+    {
+        maSon: "QR101",
+        loaiSon: "Sơn Lót Khánh Kiềm Nội Thất Tiêu Chuẩn",
+        hangSon: "QUEENS",
+        image: "./anh/QR101.png",
+        moTa: "Loại sơn lót chuyên dụng giúp tăng độ bám dính giữa tường và lớp sơn phủ, ngăn kiềm hóa bề mặt xi măng, giảm tiêu hao sơn phủ và chống ố vàng hiệu quả. Phù hợp cho các công trình nội thất dân dụng và văn phòng."
+    },
+    {
+        maSon: "QR102",
+        loaiSon: "Sơn Lót Khánh Kiềm Nội Thất Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR102.png",
+        moTa: "Sơn lót gốc nước cao cấp có khả năng kháng kiềm mạnh, tăng độ mịn và sáng cho lớp sơn phủ. Giúp tường bền màu lâu hơn, chống nấm mốc, bong tróc và ẩm mốc trong điều kiện khí hậu nóng ẩm."
+    },
+    {
+        maSon: "QR103",
+        loaiSon: "Sơn Lót Khánh Kiềm Ngoại Thất Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR103.png",
+        moTa: "Sản phẩm chuyên dụng cho bề mặt tường ngoài trời, giúp chống thấm, chống rêu mốc và tăng độ bền màu cho lớp sơn phủ. Bám dính tốt trên bê tông, xi măng, thích hợp với mọi điều kiện thời tiết khắc nghiệt."
+    },
+    {
+        maSon: "QR400",
+        loaiSon: "Sơn Chống Thấm Hệ Trộn Với Xi Măng",
+        hangSon: "QUEENS",
+        image: "./anh/QR400.png",
+        moTa: "Sơn chống thấm hai thành phần được pha trộn với xi măng tạo lớp màng bảo vệ chắc chắn, ngăn thấm nước từ ngoài vào tường. Thích hợp cho tầng hầm, sân thượng, phòng tắm, mái và các khu vực thường xuyên ẩm ướt."
+    },
+    {
+        maSon: "QR202",
+        loaiSon: "Sơn Siêu Trắng Trần Nội Thất Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR202.png",
+        moTa: "Dòng sơn trần có độ trắng tinh khiết cao, giúp phản xạ ánh sáng tốt và tạo không gian sáng sủa, sang trọng. Sơn khô nhanh, không ố vàng, chống bám bụi và thi công dễ dàng trên bề mặt bê tông, trần thạch cao."
+    },
+    {
+        maSon: "QR402",
+        loaiSon: "Sơn Chống Thấm Màu Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR402.png",
+        moTa: "Sơn tích hợp khả năng chống thấm và tạo màu, giúp tiết kiệm thời gian thi công. Có thể sơn trực tiếp lên tường ngoài trời, bảo vệ và làm đẹp công trình với độ bền màu vượt trội và khả năng kháng tia UV hiệu quả."
+    },
+    {
+        maSon: "QR200",
+        loaiSon: "Sơn Mịn Nội Thất Tiêu Chuẩn",
+        hangSon: "QUEENS",
+        image: "./anh/QR200.png",
+        moTa: "Sơn phủ có độ mịn cao, bề mặt nhẵn, dễ lau chùi và có khả năng che phủ tốt. Phù hợp cho phòng khách, phòng ngủ, giúp không gian nội thất sang trọng và tươi sáng."
+    },
+    {
+        maSon: "QR204",
+        loaiSon: "Sơn Bóng Nội Thất Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR204.png",
+        moTa: "Sơn có độ bóng hoàn hảo giúp phản xạ ánh sáng, tạo cảm giác rộng rãi và hiện đại cho không gian. Bề mặt chống bám bẩn, dễ lau chùi, thích hợp cho khu vực thường xuyên sử dụng như phòng khách, hành lang."
+    },
+    {
+        maSon: "QR205",
+        loaiSon: "Sơn Siêu Bóng Nội Thất Men Đặc Biệt",
+        hangSon: "QUEENS",
+        image: "./anh/QR205.png",
+        moTa: "Sơn có lớp phủ bóng gương đặc biệt, chống bám bụi, dễ lau rửa và có khả năng phản chiếu ánh sáng tốt. Mang lại vẻ đẹp sang trọng, đẳng cấp cho không gian nội thất cao cấp."
+    },
+    {
+        maSon: "QR301",
+        loaiSon: "Sơn Mịn Ngoại Thất Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR301.png",
+        moTa: "Sơn phủ ngoài trời có khả năng kháng kiềm, chống tia UV và chịu thời tiết khắc nghiệt. Màu sắc bền đẹp lâu dài, giúp bề mặt tường luôn tươi mới, sạch sẽ theo thời gian."
+    },
+    {
+        maSon: "QR201",
+        loaiSon: "Sơn Mịn Nội Thất Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR201.png",
+        moTa: "Dòng sơn cao cấp có độ che phủ vượt trội, bề mặt mịn và mượt, dễ lau chùi, không chứa chì và thủy ngân. Giúp không gian sống an toàn, sạch đẹp và thân thiện môi trường."
+    },
+    {
+        maSon: "QR301",
+        loaiSon: "Sơn Bóng Ngoại Thất Cao Cấp",
+        hangSon: "QUEENS",
+        image: "./anh/QR302.png",
+        moTa: "Sơn có khả năng chống bám bụi, kháng tia cực tím và chống bám rêu mốc hiệu quả. Bề mặt bóng đẹp, bền màu dưới ánh nắng và mưa gió, giúp công trình luôn mới và sang trọng."
+    },
+    {
+        maSon: "QR303",
+        loaiSon: "Sơn Siêu Bóng Ngoại Thất Men Sứ Đặc Biệt",
+        hangSon: "QUEENS",
+        image: "./anh/QR303.png",
+        moTa: "Dòng sơn cao cấp nhất với độ bóng như men sứ, khả năng chống bám bụi, kháng tia UV và tự làm sạch khi gặp mưa. Bề mặt sáng mịn, giữ màu cực lâu, phù hợp cho các công trình sang trọng và cao cấp."
     }
 ];
 
@@ -462,3 +553,8 @@ renderProducts();
 
 
 
+
+
+
+
+  
