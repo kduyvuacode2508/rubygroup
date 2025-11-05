@@ -207,7 +207,7 @@ const arrSon = [
         moTa: "Dòng sơn cao cấp có độ che phủ vượt trội, bề mặt mịn và mượt, dễ lau chùi, không chứa chì và thủy ngân. Giúp không gian sống an toàn, sạch đẹp và thân thiện môi trường."
     },
     {
-        maSon: "RN3100",
+        maSon: "RN3200",
         loaiSon: "Sơn Bóng Ngoại Thất Cao Cấp",
         hangSon: "NANO",
         image: "./anh/RN3100.png",
